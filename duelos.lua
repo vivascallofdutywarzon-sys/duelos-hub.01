@@ -155,7 +155,7 @@ end
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
 
-    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+    if input.KeyCode == Enum.KeyCode.G then
         aiming = true
     end
 
@@ -174,7 +174,7 @@ UserInputService.InputBegan:Connect(function(input, gameProcessed)
 end)
 
 UserInputService.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton2 then
+    if input.KeyCode == Enum.KeyCode.G then
         aiming = false
     end
 end)
